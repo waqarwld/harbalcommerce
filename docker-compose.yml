@@ -22,6 +22,7 @@ services:
       context: ./frontend/customer
       dockerfile: Dockerfile
     volumes:
+      - ./frontend/customer/public:/app/public:ro
       - ./frontend/customer/src:/app/src:ro
     networks:
       - ecommerce-network
@@ -32,6 +33,7 @@ services:
       context: ./frontend/admin
       dockerfile: Dockerfile
     volumes:
+      - ./frontend/admin/public:/app/public:ro
       - ./frontend/admin/src:/app/src:ro
     networks:
       - ecommerce-network
