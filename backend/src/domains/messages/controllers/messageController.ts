@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { AppError } from '../../shared/utils/response';
+import { AppError } from '../../../shared/utils/response';
 
 const messages: any[] = [];
 let counter = 1;

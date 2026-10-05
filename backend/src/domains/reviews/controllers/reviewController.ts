@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { AppError } from '../../shared/utils/response';
+import { AppError } from '../../../shared/utils/response';
 
 const reviews: any[] = [];
 let counter = 1;

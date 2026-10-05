@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { AppError } from '../../shared/utils/response';
+import { AppError } from '../../../shared/utils/response';
 
 let products: any[] = [];
 let productIdCounter = 1;

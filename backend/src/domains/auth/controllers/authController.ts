@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { AppError } from '../../shared/utils/response';
+import { AppError } from '../../../shared/utils/response';
 
 const users: any[] = [];
 const refreshTokens: Set<string> = new Set();
